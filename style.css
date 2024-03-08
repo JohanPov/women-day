@@ -1,0 +1,232 @@
+body{--t:.5; --scale:3;}
+svg.root{width:1px;height:1px;position:absolute;left:-100em;}
+svg{
+  width: 100vw;
+  height: 100vh;
+  background:#e0cae0;
+  fill-opacity:0.75;
+}
+
+symbol{overflow:visible}
+
+svg use{transform:rotate(0deg); transition:transform calc(var(--t) * 1s);}
+
+svg g.a{transition:transform calc(var(--t) * 1s);}
+svg g.a{transform:scale(var(--scale)) rotate(-90deg);
+filter:url('#f')
+}
+.Picture {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: auto; 
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+._2{--n : 2;}
+._3{--n : 3;}
+._4{--n : 4;}
+._5{--n : 5;}
+
+svg .a g:nth-of-type(1){transform:rotate(calc(-.5 * 180deg / var(--n)));}
+svg .a g:nth-of-type(2){transform:rotate(calc( .5 * 180deg / var(--n)));}
+
+svg .a g:nth-of-type(1) use:nth-of-type(2){transform:rotate(calc(-1deg * 180 / var(--n)));}
+svg .a g:nth-of-type(1) use:nth-of-type(3){transform:rotate(calc(-2deg * 180 / var(--n)));}
+svg .a g:nth-of-type(1) use:nth-of-type(4){transform:rotate(calc(-3deg * 180 / var(--n)));}
+svg .a g:nth-of-type(1) use:nth-of-type(5){transform:rotate(calc(-4deg * 180 / var(--n)));}
+
+svg .a g:nth-of-type(2) use:nth-of-type(2){transform:rotate(calc(1deg * 180 / var(--n)));}
+svg .a g:nth-of-type(2) use:nth-of-type(3){transform:rotate(calc(2deg * 180 / var(--n)));}
+svg .a g:nth-of-type(2) use:nth-of-type(4){transform:rotate(calc(3deg * 180 / var(--n)));}
+svg .a g:nth-of-type(2) use:nth-of-type(5){transform:rotate(calc(4deg * 180 / var(--n)));}
+
+#texto1 {
+  position: absolute;
+  top: 75%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 5px yellow; }
+
+#texto2 {
+  position: absolute;
+  top: 90%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 5px yellow; 
+}
+
+
+
+/* Estilos generales */
+body {
+  --t: .5;
+  --scale: 3;
+}
+
+svg.root {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -100em;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  background: #e0cae0;
+  fill-opacity: 0.75;
+}
+
+symbol {
+  overflow: visible;
+}
+
+svg use {
+  transform: rotate(0deg);
+  transition: transform calc(var(--t) * 1s);
+}
+
+svg g.a {
+  transition: transform calc(var(--t) * 1s);
+}
+
+svg g.a {
+  transform: scale(var(--scale)) rotate(-90deg);
+  filter: url('#f');
+}
+
+.Picture {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+._2 {
+  --n: 2;
+}
+
+._3 {
+  --n: 3;
+}
+
+._4 {
+  --n: 4;
+}
+
+._5 {
+  --n: 5;
+}
+
+svg .a g:nth-of-type(1) {
+  transform: rotate(calc(-.5 * 180deg / var(--n)));
+}
+
+svg .a g:nth-of-type(2) {
+  transform: rotate(calc(.5 * 180deg / var(--n)));
+}
+
+svg .a g:nth-of-type(1) use:nth-of-type(2) {
+  transform: rotate(calc(-1deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(1) use:nth-of-type(3) {
+  transform: rotate(calc(-2deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(1) use:nth-of-type(4) {
+  transform: rotate(calc(-3deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(1) use:nth-of-type(5) {
+  transform: rotate(calc(-4deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(2) use:nth-of-type(2) {
+  transform: rotate(calc(1deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(2) use:nth-of-type(3) {
+  transform: rotate(calc(2deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(2) use:nth-of-type(4) {
+  transform: rotate(calc(3deg * 180 / var(--n)));
+}
+
+svg .a g:nth-of-type(2) use:nth-of-type(5) {
+  transform: rotate(calc(4deg * 180 / var(--n)));
+}
+
+/* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles iPhone 14 Pro */
+@media only screen and (max-width: 1170px) {
+  .Picture {
+    top: 45%;
+  }
+
+  #texto1 {
+    top: 60%;
+  }
+
+  #texto2 {
+    top: 65%;
+  }
+}
